@@ -1,0 +1,219 @@
+.wrapper {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+/* 导航 */
+
+.shortcut {
+    height: 52px;
+    background-color: #333;
+}
+
+.shortcut ul li {
+    float: right;
+}
+.shortcut ul li a{
+    padding: 0 16px;
+    border-right: 1px solid #666;
+    line-height: 52px;
+    font-size: 14px;
+    color: #dcdcdc;
+}
+.shortcut ul li:first-child a{
+    border-right: 0;
+}
+.shortcut ul a span{
+    display: inline-block;
+    margin-right: 8px;
+    width: 11px;
+    height: 16px;
+    background-image: url(../images/sprites.png);
+    background-position: -160px -70px;
+    vertical-align: middle;
+}
+.shortcut ul li a:hover {
+    color: #27bb9a;
+}
+.shortcut ul li a span:hover {
+    color: #27bb9a;
+}
+
+/* 头部 */
+.header {
+    margin: 30px auto;
+    height: 80px;
+}
+
+.header .logo {
+    float: left;
+    width: 200px;
+    height: 80px;
+}
+.header .logo a {
+    display: block;
+    width: 200px;
+    height: 80px;
+    background-image: url(../images/logo.png);
+    background-size: contain;
+    font-size: 0;
+}
+
+.header .nav {
+    float: left;
+    margin-left: 40px;
+}
+.header .nav li {
+    float: left;
+    margin-right: 48px;
+    line-height: 80px;
+}
+.header .nav li a {
+    padding-bottom: 7px;
+}
+.header .nav li:last-child {
+    margin-right: 0;
+}
+.header .nav li a:hover {
+    color: #27bb9a;
+    border-bottom: 1px solid #27bb9a;
+}
+
+.header .search {
+    float: left;
+    margin-left: 34px;
+    margin-top: 24px;
+    width: 172px;
+    height: 30px;
+    border-bottom: 1px solid #e7e7e7;
+}
+.header .search span {
+    display: inline-block;
+    width: 17px;
+    height: 23px;
+    background-image: url(../images/sprites.png);
+    background-position: -80px -70px;
+    vertical-align: middle;
+}
+.header .search input {
+    margin-top: 5px;
+    width: 150px;
+    height: 23px;
+}
+.header .search input::placeholder{
+    font-size: 14px;
+    color: #ccc;
+}
+
+.header .shopcar {
+    position: relative;
+    float: left;
+    margin-top: 24px;
+    margin-left: 10px;
+    height: 30px;
+    line-height: 30px;
+}
+.header .shopcar span {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background-image: url(../images/sprites.png);
+    background-position: -120px -70px;
+    vertical-align: middle;
+}
+.header .shopcar p {
+    display: inline-block;
+    position: absolute;
+    right: -10px;
+    top: -5px;
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 100%;
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+    line-height: 15px;
+}
+
+/* 版权区域 */
+.footer {
+    height: 340px;
+    background-color: #333;
+}
+.footer .wrapper {
+    width: 1393px;
+}
+
+.footer .wrapper .higher {
+    padding-top: 60px;
+    padding-left: 135px;
+    height: 178px;
+    border-bottom: 3px solid #434343;
+}
+.footer .higher li {
+    float: left;
+    margin-right: 275px;
+}
+.footer .higher li:last-child {
+    margin-right: 0;
+}
+
+.footer .higher .area1 {
+    float: left;
+    width: 58px;
+    height: 58px;
+    background-image: url(../images/sprites.png);
+    background-position: 0 0;
+    vertical-align: middle;
+}
+.footer .higher .area2 {
+    float: left;
+    width: 58px;
+    height: 58px;
+    background-image: url(../images/sprites.png);
+    background-position: -65px 0;
+    vertical-align: middle;
+}
+.footer .higher .area3 {
+    float: left;
+    width: 58px;
+    height: 58px;
+    background-image: url(../images/sprites.png);
+    background-position: -130px 0;
+    vertical-align: middle;
+}
+.footer .higher p {
+    float: left;
+    margin-left: 20px;
+    color: #ccc;
+    font-size: 28px;
+    line-height: 58px;
+}
+
+.footer .lower {
+    padding-top: 40px;
+    text-align: center;
+}
+/* block元素是注定居不了中，将其改成不是块的就可以了 */
+.footer .lower ul {
+    display:inline-block;
+}
+.footer .lower li {
+    float: left;
+    padding: 0 10px;
+    border-right: 1px solid #999;
+}
+.footer .lower li a{
+    color: #999;
+    font-size: 15px;
+}
+.footer .lower li:last-child {
+    border-right: 0;
+}
+
+.footer .lower p {
+    margin-top: 10px;
+    color: #999;
+    font-size: 15px;
+}

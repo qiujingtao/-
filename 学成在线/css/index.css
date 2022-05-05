@@ -1,0 +1,378 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    /* 内减模式 */
+    box-sizing: border-box;
+}
+
+/* 清除下划线 */
+li {
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+}
+
+/* 解决：取消浮动影响 外边距塌陷问题 */
+.clearfix::before, .clearfix::after {
+    content: "";
+    display: table;
+}
+.clearfix::after {
+    clear: both;
+}
+
+body {
+    background-color: #f3f5f7;
+}
+
+/* 版心居中 */
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 42px;
+    /* margin-top: 30px;
+    margin-bottom: 30px; */
+    margin: 30px auto;
+}
+
+h1 {
+    float: left;
+}
+
+/* 导航 */
+.nav {
+    float: left;
+    margin-left: 70px;
+    height: 42px;
+}
+
+.nav li {
+    float: left;
+    margin-right: 26px;
+}
+.nav li:nth-child(3) {
+    margin-right: 0px;
+}
+/* padding没有auto属性 */
+.nav li a {
+    display: block;
+    padding: 0 9px;
+    height: 42px;
+    line-height: 42px;
+    /* border-bottom: 2px solid #00a4ff; */
+
+    font-size: 18px;
+    color: #050505;
+}
+.nav li a:hover {
+    border-bottom: 2px solid #00a4ff;
+}
+
+/* 搜索 */
+.search {
+    float: left;
+    margin-left: 94px;
+    border: 1px solid #00a4ff;
+    width: 412px;
+    height: 42px;
+}
+.search input {
+    float: left;
+    padding-left: 20px;
+    width: 360px;
+    height: 40px;
+    border: 0;
+}
+.search input::placeholder {
+    font-size: 14px;
+    color: #bfbfbf;
+}
+
+.search button {
+    float: right;
+    width: 50px;
+    height: 40px;
+    border: 0;
+    background-image: url("../images/btn.png");
+}
+
+/* 用户 */
+.user {
+    float: left;
+    margin-left: 31px;
+    height: 42px;
+}
+.user a {
+    line-height: 42px;
+    text-decoration: none;
+    color: #050505;
+}
+.user img {
+    vertical-align: middle;
+}
+
+/* 轮播图 */
+.banner {
+    height: 420px;
+    background-color: #1c036c;
+}
+
+.banner .wrapper {
+    height: 420px;
+    background-image: url('../images/banner2_20190819_210028.png');
+}
+
+.banner .left {
+    float: left;
+    padding: 12px 20px;
+    width: 190px;
+	height: 420px;
+	background-color: rgba(0,0,0,0.3);
+
+    line-height: 44px;
+}
+.banner .left a {
+    font-size: 14px;
+    font-weight: normal;
+    color: #fff;
+}
+.banner .left a:hover {
+    color: #00a4ff;
+}
+
+.banner .left span {
+    float: right;
+}
+
+.banner .right {
+    float: right;
+    margin-top: 50px;
+    width: 228px;
+	height: 300px;
+	background-color: #ffffff;
+}
+
+.banner .right .brheader {
+    height: 48px;
+    text-align: center;
+    line-height: 48px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 2px;
+    background-color: #9bceea;
+}
+
+.banner .right .content {
+    padding: 5px 18px;
+    box-sizing: content-box;
+}
+
+.banner .right .content dl {
+    padding: 12px 0;
+    border-bottom: 2px solid #e5e5e5;
+    font-family: FZLTCXHJW--GB1-0;
+}
+
+.banner .right .bra {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 41px;
+    width: 200px;
+    height: 41px;
+    border: 1px solid #00a4ff;
+
+    color: #00a4ff;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* 推荐 */
+.goods {
+    margin-top: 6px;
+    height: 60px;
+	background-color: #ffffff;
+	box-shadow: 0px 2px 3px 0px 
+		rgba(118, 118, 118, 0.2);
+}
+
+.goods ul li{
+    float: left;
+    padding: 0 34px;
+    margin: 22px 0;
+
+    font-size: 16px;
+	font-weight: normal;
+    border-right: 1px solid #bfbfbf;
+}
+.goods ul li a {
+    color: #050505;
+}
+.goods ul li:first-child a{
+    font-weight: bold;
+    color: #00a4ff;
+}
+.goods ul li:last-child a{
+    border-right: 0;
+}
+
+.goods span a {
+    float: right;
+    margin: 23px 0;
+    margin-right: 24px;
+    font-size: 14px;
+    color: #00a4ff;
+
+    text-decoration: none;
+}
+
+/* 课程 */
+.course {
+    margin-top: 37px;
+}
+.course .title {
+    height: 40px;
+}
+.course .title h2 {
+    float: left;
+    font-size: 20px;
+	color: #494949;
+}
+.course .title span a{
+    float: right;
+    margin-top: 7px;
+    margin-right: 31px;
+    font-size: 12px;
+	color: #a5a5a5;
+    text-decoration: none;
+}
+
+.course .csarea li {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+
+    width: 228px;
+	height: 270px;
+	background-color: #ffffff;
+	box-shadow: 0px 2px 5px 0px 
+		rgba(118, 118, 118, 0.5);
+}
+.course .csarea li:nth-child(5n) {
+    margin-right: 0;
+}
+
+.course .csarea .cstitle a {
+    display: block;
+    margin: 20px 25px;
+
+    width: 184px;
+	font-family: MicrosoftYaHei;
+	font-size: 14px;
+	line-height: 20px;
+    font-weight: normal;
+	font-stretch: normal;
+	color: #050505;
+}
+
+.course .csarea .csend {
+    margin-left: 25px;
+}
+
+.course .csarea .csend p {
+	font-family: MicrosoftYaHei;
+	font-size: 12px;
+	font-weight: normal;
+	letter-spacing: 0px;
+	color: #999999;
+}
+
+.course .csarea .csend span {
+	font-family: MicrosoftYaHei;
+	font-size: 12px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #ff7c2d;
+}
+
+/* 版权 */
+.copyright {
+    margin-top: 24px;
+    height: 417px;
+	background-color: #ffffff;
+}
+
+.copyright .left {
+    float: left;
+    margin-left: 21px;
+    margin-top: 33px;
+}
+.copyright .left p {
+    margin-top: 25px;
+	font-family: SimSun;
+	font-size: 12px;
+	line-height: 18px;
+	color: #666666;
+}
+.copyright .left .download {
+    display: block;
+    margin-top: 10px;
+    width: 120px;
+	height: 36px;
+	border: solid 1px #00a4ff;
+
+    color: #00a4ff;
+    text-align: center;
+    line-height: 36px;
+    text-decoration: none;
+}
+
+
+.copyright .right {
+    float: right;
+    margin-right: 31px;
+    margin-top: 33px;
+}
+.copyright .right .btinfo {
+    float: right;
+    width: 150px;
+}
+.copyright .right h5 {
+    margin-bottom: 10px;
+    font-family: MicrosoftYaHei;
+    font-size: 16px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 21px;
+	letter-spacing: 0px;
+	color: #333333;
+}
+.copyright .right a {
+    font-family: SimSun;
+	font-size: 12px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 21px;
+	letter-spacing: 0px;
+    text-decoration: none;
+    color: #333333;
+}
+
+/* hot定位 子绝父相 */
+.course .csarea li {
+    position: relative;
+}
+.course .csarea li .imghot {
+    position: absolute;
+    right: -10px;
+    top: 20px;
+}
